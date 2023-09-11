@@ -4,41 +4,42 @@
     <title>Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets2/index.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shorcut icon" href="assets/anime1.ico">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <section class="header">
         <a href="#" class="logo">Home</a>
-        <i class='bx bx-menu menu
-'></i>
+        <i class='bx bx-menu menu'></i>
         <nav class="navbar">
-            <a href="Portofolio.html" style="--clr:1" id="">Portofolio</a>
+            <a href="index.html" style="--clr:1" id="">Portofolio</a>
             <a href="Music Web/index.html" style="--clr:2" id="">Music</a>
             <a href="Error.html" style="--clr:3" id="">About Me</a>
-            <a href="contact2.html" style="--clr:4" id="">Contact Us</a>
+            <a href="contact2.html" style="--clr:4" id="">Blog</a>
         </nav>
     </section>
     <section class="home">
         <div class="text-section">
-            <h2>I'M Spinlly</h2>
-            <h3>Fronted Developer</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
-            <span class="btn-box">
-                <a href="Error.html">Download C.V</a>
-            </span>
-            <div class="social-media">
-                <a href="https://www.facebook.com/dimas.p.cahyadi.9/"><i class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/spinllyy_/"><i class='bx bxl-instagram'></i></a>
-                <a href="Error.html"><i class='bx bxl-twitter'></i></a>
-                <a href="https://discord.com/channels/@me"><i class='bx bxl-discord'></i></a>
-            </div>
+            <h1>Hello World I'M</h1>
+            <h2> Spinlly</h2>
+            <h3><span class="typing-text"></span></h3>
+            <p>Welcome To My Personal Website 🤗</p>
         </div>
         <div class="image-section">
-            <img src="assets/download (1).jfif">
+            <img src="Assets/animw.jpg">
         </div>
     </section>
-    <script src="assets2/index.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('.typing-text', {
+            strings: ["Halo Selamat Datang", "Di webis", " Di wbst", "typo mulu :)"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true,
+        });
+    </script>
+    <script src="index.js"></script>
 </body>
 </html>
