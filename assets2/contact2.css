@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: url(neko.jpg);
+    font-family: 'poppins';
+    background-size: cover;
+}
+.contact-box ::placeholder{
+    color: #000000;
+}
+.contact-box{
+    width: 500px;
+    background-color: #b48c8c;
+    box-shadow: 0 0 20px 0 #6b6a6a;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background: url(neko.jpg);
+    background-size: cover;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+
+}
+form{
+    margin: 35px;
+}
+.input-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #000000;
+    border-radius: 14px;
+    outline: none;
+    background: transparent;
+    backdrop-filter: blur(2px);
+}
+.textarea-field{
+    height: 150px;
+    padding-top: 10px;
+}
+.btn{
+    border-radius: 20px;
+    color: #000000;
+    padding: 10px;
+    margin-top: 18px;
+    background: transparent;
+    font-size: 15px;
+    border: 1px solid #000000;
+    cursor: pointer;
+
+}
+.right{
+    padding: 25px 40px;
+}
+h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    height: 4p;
+    width: 50px;
+    border-radius: 2px;
+    background-color: rgb(0, 0, 0);
+}
