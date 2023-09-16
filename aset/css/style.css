@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    background: #face55;
+    height: 100%;
+    width: 100%;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    z-index: 100;
+}
+.sticky{
+    background: #face55;
+    border: 1px solid rgba(255,255,255,.1);
+}
+.header a{
+    color: #e01d1d;   
+}
+.header .logo{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    animation: SlideRight 1s ease forwards;
+    opacity: 0;
+    filter: blur(5px);
+}
+@keyframes SlideRight{
+    0%{
+        transform: translateX(-100%);
+        opacity: 1;
+        filter: blur(2px);
+    }
+    100%{
+        transform: translateX(00%);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+.navbar a{
+    font-size: 20px;
+    display: inline-block;
+    padding-left: 50px;
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #d81212;
+    animation: Slidetop .5s ease forwards;
+    opacity: 0;
+    filter: blur(5px);
+    animation-delay: calc(.2s*var(--clr));
+}
+@keyframes Slidetop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 1;
+        filter: blur(2px);
+    }
+    100%{
+        transform: translateY(00%);
+        opacity: 1;
+        filter: blur(0px);
+    }
+       
+}
+.header .menu{
+    color: rgb(255, 0, 0);
+    font-size: 26px;
+    display: none ;
+    margin: 5px;
+    padding: 1px auto;
+}
+.navbar a:hover{
+    color: #310e0e;
+
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+section{
+    padding: 10rem 9% 2rem;
+}
+.text-section{
+    color: #da2020;
+    max-width: 700PX;
+    font-weight: 700;
+}
+.text-section h1{
+    font-size: 15px;
+    color:#4b421b;
+    animation: SlideRight 1s ease forwards;
+    opacity: 0;
+    filter: blur(5px);
+}
+.text-section h2{
+    font-size: 50px;
+    animation: Slidetop .5s ease forwards;
+    opacity: 0;
+    filter: blur(5px);
+    animation-delay: .7s;
+
+}
+.text-section h3{
+    font-size: 30px;
+    color: #000000;
+    animation: SlideRight 1s ease forwards;
+    opacity: 0;
+    filter: blur(5px);
+}
+.text-section p{
+    margin-top: 20px;
+    color: #ca2121;
+    animation: SlideLeft 1s ease forwards;
+    opacity: 0;
+    filter: blur(5px);
+    animation-delay: 1s;
+}
+@keyframes SlideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 1;
+        filter: blur(2px);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+.image-section{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px;
+}
+.image-section img{
+    height: 300%;
+    width: 100%;
+    border-radius: 50%;
+    animation: Zoom 1s ease forwards,floaty 1s infinite alternate;
+    animation-delay: 0s,1s;
+    opacity: 1;
+}
+@keyframes Zoom{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    1100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes floaty {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+@media(max-width:768px){
+     section{
+        padding: 10rem 2% 0;
+     }
+     .text-section{
+        padding: auto;
+     }
+     .home{
+        display: grid;
+     }
+     .navbar{
+        display: none;
+     }
+     .navbar a{
+        font-size: 20px;
+        margin: 48px 0;
+        display: block;
+     }
+     .navbar{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background: #f0c03b;
+        border-radius: 5%;
+        padding: 1rem 3%;
+        width: 100%;
+        border-top: 2px solid rgba(212, 204, 204, 0.1);
+        box-shadow: 0 .8px 20px rgba(255,255,255,.1);
+        
+     }
+     .navbar.active{
+        display: block;
+     }
+     .header .menu{
+        display: block;
+     }
+     .text-section{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     }
+     .btn-box{
+        height: 50px;
+        width: 200px;
+        margin-top: 20px;
+     }
+     .social-media{
+        top: 70%;
+     }
+
+}
